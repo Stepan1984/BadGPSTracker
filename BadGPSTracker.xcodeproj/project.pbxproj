@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED84DC3A6B574F2C8DD9C846 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9061A3E104341AC801CD329 /* AppModel.swift */; };
+		4FB0A65C957C46E4B860DFFB /* BadGPSTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3191FF7C6A4F21A994BF2F /* BadGPSTrackerApp.swift */; };
+		B0994A781496479188879DF9 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384CC2852DCD42E3A42D5917 /* RootTabView.swift */; };
+		606C8FC2072B4A2093B3A844 /* ConfidenceEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C15F67E8024C368D246AA9 /* ConfidenceEstimator.swift */; };
+		134C2BB268B14F1288EAAD44 /* SimpleKalmanFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D9DC27A7C484B821C1714 /* SimpleKalmanFilter.swift */; };
+		863051D2824B4893AA0140BA /* FusionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CA4251DA4544C99ED5D114 /* FusionEngine.swift */; };
+		D7EB08CF61864BDBB3956DC1 /* FusionModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6952B30031405AAFD4A653 /* FusionModeController.swift */; };
+		389091A2B1B143A8851E2DE7 /* MapKitMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34838005239940DBBA843691 /* MapKitMatcher.swift */; };
+		F746DEF6B1EE4D129A36BBB5 /* PermissionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C69B43ED1B49689B166501 /* PermissionsService.swift */; };
+		C504B36E4DED455E9420F015 /* AnomalyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60FEA1F846E4F04BBE19B33 /* AnomalyEvent.swift */; };
+		27C33A652251490E8FCD5585 /* RunSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9870B573F439EBB3C2DCF /* RunSession.swift */; };
+		C451FC76E69F49A99B604EFA /* TrackPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E59B6FBCC24E699ADF4B44 /* TrackPoint.swift */; };
+		5AEDDE6A946D4287A94C5DD5 /* RunStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F1E6689C24B0298634707 /* RunStore.swift */; };
+		D5E1C729B8CE45CC8C1F25F1 /* BarometerSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C36FC98E1D4B3DAC5E746D /* BarometerSensor.swift */; };
+		29DCE6E3C9064DF08002402E /* LocationSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DCD7E12986448B83110314 /* LocationSensor.swift */; };
+		5620847D871F441B9A75E5F0 /* MotionSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F123DA2F3E94C23B9EFC3A6 /* MotionSensor.swift */; };
+		12C0F568D2684A86A81AD60F /* RunSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F97C842CBE348FAB44BFFA3 /* RunSessionController.swift */; };
+		530DD9F6E478401FA062C587 /* TrackingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971A1C670DA45DF916C5A59 /* TrackingConstants.swift */; };
+		E8DF557EDA444C2192485053 /* AnomalyKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63C33A3C974FEAB79DAFAB /* AnomalyKind.swift */; };
+		5B530C92F1A8405FB38BD197 /* FusionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D811C29B49DF4289803B61DB /* FusionState.swift */; };
+		DE0D2D2AC07B45D898C233D4 /* PermissionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E5ACC481C4A11A1E031BE /* PermissionStatus.swift */; };
+		7401534FCECA4DDD83EFA731 /* SensorSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7630B54AD7624193908EF4D9 /* SensorSample.swift */; };
+		DACA078A0A7C4E96B6100E59 /* TrackSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B014CCB47EF4A56A71B7F22 /* TrackSource.swift */; };
+		1A514DC331FC409DA8B903E5 /* LiveMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ABF050FB1741F3A2EA4DAA /* LiveMapView.swift */; };
+		673FB5F35E88412780E01AB2 /* PostRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F9138A86D470BB007A69C /* PostRunView.swift */; };
+		7AC456D124F842CDADA33FA7 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1F997B07F448D1BDA42B8C /* StartView.swift */; };
+		D87294AA49B94232BEBD74D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2651D870F4FF4EBB8301D4A8 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5984A579BB8F40FAAA1011D8 /* BadGPSTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadGPSTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9061A3E104341AC801CD329 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		0D3191FF7C6A4F21A994BF2F /* BadGPSTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadGPSTrackerApp.swift; sourceTree = "<group>"; };
+		384CC2852DCD42E3A42D5917 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		B7C15F67E8024C368D246AA9 /* ConfidenceEstimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfidenceEstimator.swift; sourceTree = "<group>"; };
+		E47D9DC27A7C484B821C1714 /* SimpleKalmanFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleKalmanFilter.swift; sourceTree = "<group>"; };
+		F3CA4251DA4544C99ED5D114 /* FusionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FusionEngine.swift; sourceTree = "<group>"; };
+		FE6952B30031405AAFD4A653 /* FusionModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FusionModeController.swift; sourceTree = "<group>"; };
+		34838005239940DBBA843691 /* MapKitMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitMatcher.swift; sourceTree = "<group>"; };
+		01C69B43ED1B49689B166501 /* PermissionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsService.swift; sourceTree = "<group>"; };
+		E60FEA1F846E4F04BBE19B33 /* AnomalyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnomalyEvent.swift; sourceTree = "<group>"; };
+		D4D9870B573F439EBB3C2DCF /* RunSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunSession.swift; sourceTree = "<group>"; };
+		A9E59B6FBCC24E699ADF4B44 /* TrackPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPoint.swift; sourceTree = "<group>"; };
+		3B7F1E6689C24B0298634707 /* RunStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunStore.swift; sourceTree = "<group>"; };
+		97C36FC98E1D4B3DAC5E746D /* BarometerSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarometerSensor.swift; sourceTree = "<group>"; };
+		B2DCD7E12986448B83110314 /* LocationSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSensor.swift; sourceTree = "<group>"; };
+		1F123DA2F3E94C23B9EFC3A6 /* MotionSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionSensor.swift; sourceTree = "<group>"; };
+		2F97C842CBE348FAB44BFFA3 /* RunSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunSessionController.swift; sourceTree = "<group>"; };
+		2971A1C670DA45DF916C5A59 /* TrackingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingConstants.swift; sourceTree = "<group>"; };
+		BE63C33A3C974FEAB79DAFAB /* AnomalyKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnomalyKind.swift; sourceTree = "<group>"; };
+		D811C29B49DF4289803B61DB /* FusionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FusionState.swift; sourceTree = "<group>"; };
+		BA5E5ACC481C4A11A1E031BE /* PermissionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionStatus.swift; sourceTree = "<group>"; };
+		7630B54AD7624193908EF4D9 /* SensorSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorSample.swift; sourceTree = "<group>"; };
+		4B014CCB47EF4A56A71B7F22 /* TrackSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackSource.swift; sourceTree = "<group>"; };
+		87ABF050FB1741F3A2EA4DAA /* LiveMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMapView.swift; sourceTree = "<group>"; };
+		E02F9138A86D470BB007A69C /* PostRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRunView.swift; sourceTree = "<group>"; };
+		6A1F997B07F448D1BDA42B8C /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		2651D870F4FF4EBB8301D4A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6802C251777E44098241F779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBCA6BC9EC6841208C4009CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8356834C930403BA5DB91C9 = {
+			isa = PBXGroup;
+			children = (
+				2C83A937D1F0444A997E8922 /* BadGPSTracker */,
+				C53E92558964419EA83A65DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C53E92558964419EA83A65DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5984A579BB8F40FAAA1011D8 /* BadGPSTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C83A937D1F0444A997E8922 /* BadGPSTracker */ = {
+			isa = PBXGroup;
+			children = (
+				1D0D6A6A8D94498199BFF60C /* App */,
+				7B81CA4C629A457F82CC3BDB /* Fusion */,
+				D71308DAE3EA46E49A208AEB /* MapMatching */,
+				FEAE605188984F39B10DBC1F /* Permissions */,
+				8F985233CFFE47F9972DD3B0 /* Persistence */,
+				EBB2687ACF8D4D59B168B294 /* Resources */,
+				AF606FDE3A0D4EA1B1402315 /* Sensors */,
+				941B9639F286455F9A3B865A /* Session */,
+				6A34DCB6DB984405A8F97D91 /* Shared */,
+				85660B9EC5EA45BD80E377D9 /* UI */,
+			);
+			path = BadGPSTracker;
+			sourceTree = "<group>";
+		};
+		1D0D6A6A8D94498199BFF60C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B9061A3E104341AC801CD329 /* AppModel.swift */,
+				0D3191FF7C6A4F21A994BF2F /* BadGPSTrackerApp.swift */,
+				384CC2852DCD42E3A42D5917 /* RootTabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7B81CA4C629A457F82CC3BDB /* Fusion */ = {
+			isa = PBXGroup;
+			children = (
+				264F83B5E42E499B9DA06EA0 /* Confidence */,
+				77C1B0E84290468497B372C8 /* Filter */,
+				D0A195CFFAD64DE0A904CE8E /* Modes */,
+				F3CA4251DA4544C99ED5D114 /* FusionEngine.swift */,
+			);
+			path = Fusion;
+			sourceTree = "<group>";
+		};
+		264F83B5E42E499B9DA06EA0 /* Confidence */ = {
+			isa = PBXGroup;
+			children = (
+				B7C15F67E8024C368D246AA9 /* ConfidenceEstimator.swift */,
+			);
+			path = Confidence;
+			sourceTree = "<group>";
+		};
+		77C1B0E84290468497B372C8 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				E47D9DC27A7C484B821C1714 /* SimpleKalmanFilter.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		D0A195CFFAD64DE0A904CE8E /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+				FE6952B30031405AAFD4A653 /* FusionModeController.swift */,
+			);
+			path = Modes;
+			sourceTree = "<group>";
+		};
+		D71308DAE3EA46E49A208AEB /* MapMatching */ = {
+			isa = PBXGroup;
+			children = (
+				34838005239940DBBA843691 /* MapKitMatcher.swift */,
+			);
+			path = MapMatching;
+			sourceTree = "<group>";
+		};
+		FEAE605188984F39B10DBC1F /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				01C69B43ED1B49689B166501 /* PermissionsService.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		8F985233CFFE47F9972DD3B0 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				BC42FBE987DC40768F432696 /* Models */,
+				3B7F1E6689C24B0298634707 /* RunStore.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		BC42FBE987DC40768F432696 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E60FEA1F846E4F04BBE19B33 /* AnomalyEvent.swift */,
+				D4D9870B573F439EBB3C2DCF /* RunSession.swift */,
+				A9E59B6FBCC24E699ADF4B44 /* TrackPoint.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBB2687ACF8D4D59B168B294 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2651D870F4FF4EBB8301D4A8 /* Assets.xcassets */,
+				6802C251777E44098241F779 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF606FDE3A0D4EA1B1402315 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				97C36FC98E1D4B3DAC5E746D /* BarometerSensor.swift */,
+				B2DCD7E12986448B83110314 /* LocationSensor.swift */,
+				1F123DA2F3E94C23B9EFC3A6 /* MotionSensor.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		941B9639F286455F9A3B865A /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				2F97C842CBE348FAB44BFFA3 /* RunSessionController.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		6A34DCB6DB984405A8F97D91 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F016B125D4DE4A8194C01A2E /* Constants */,
+				722A718DC5C846908906833E /* Types */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F016B125D4DE4A8194C01A2E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2971A1C670DA45DF916C5A59 /* TrackingConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		722A718DC5C846908906833E /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				BE63C33A3C974FEAB79DAFAB /* AnomalyKind.swift */,
+				D811C29B49DF4289803B61DB /* FusionState.swift */,
+				BA5E5ACC481C4A11A1E031BE /* PermissionStatus.swift */,
+				7630B54AD7624193908EF4D9 /* SensorSample.swift */,
+				4B014CCB47EF4A56A71B7F22 /* TrackSource.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		85660B9EC5EA45BD80E377D9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				317C6AE68E554A4E9D8C980F /* Live */,
+				17CA1DF8CF0F40E996950569 /* PostRun */,
+				D88760570AD649EB9F0327A5 /* Start */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		317C6AE68E554A4E9D8C980F /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				87ABF050FB1741F3A2EA4DAA /* LiveMapView.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		17CA1DF8CF0F40E996950569 /* PostRun */ = {
+			isa = PBXGroup;
+			children = (
+				E02F9138A86D470BB007A69C /* PostRunView.swift */,
+			);
+			path = PostRun;
+			sourceTree = "<group>";
+		};
+		D88760570AD649EB9F0327A5 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				6A1F997B07F448D1BDA42B8C /* StartView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13A589D852614622A4581392 /* BadGPSTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 966467E31B6C4EFDA6EA303A /* Build configuration list for PBXNativeTarget "BadGPSTracker" */;
+			buildPhases = (
+				BB21785E3F244D03ADD462ED /* Sources */,
+				BBCA6BC9EC6841208C4009CE /* Frameworks */,
+				3B2D3B532AD245298BB97053 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BadGPSTracker;
+			productName = BadGPSTracker;
+			productReference = 5984A579BB8F40FAAA1011D8 /* BadGPSTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		157D17478DD8491D831D768A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					13A589D852614622A4581392 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = E6D75EC420EA43DFB6665A99 /* Build configuration list for PBXProject "BadGPSTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8356834C930403BA5DB91C9;
+			productRefGroup = C53E92558964419EA83A65DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13A589D852614622A4581392 /* BadGPSTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B2D3B532AD245298BB97053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87294AA49B94232BEBD74D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB21785E3F244D03ADD462ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED84DC3A6B574F2C8DD9C846 /* AppModel.swift in Sources */,
+				4FB0A65C957C46E4B860DFFB /* BadGPSTrackerApp.swift in Sources */,
+				B0994A781496479188879DF9 /* RootTabView.swift in Sources */,
+				606C8FC2072B4A2093B3A844 /* ConfidenceEstimator.swift in Sources */,
+				134C2BB268B14F1288EAAD44 /* SimpleKalmanFilter.swift in Sources */,
+				863051D2824B4893AA0140BA /* FusionEngine.swift in Sources */,
+				D7EB08CF61864BDBB3956DC1 /* FusionModeController.swift in Sources */,
+				389091A2B1B143A8851E2DE7 /* MapKitMatcher.swift in Sources */,
+				F746DEF6B1EE4D129A36BBB5 /* PermissionsService.swift in Sources */,
+				C504B36E4DED455E9420F015 /* AnomalyEvent.swift in Sources */,
+				27C33A652251490E8FCD5585 /* RunSession.swift in Sources */,
+				C451FC76E69F49A99B604EFA /* TrackPoint.swift in Sources */,
+				5AEDDE6A946D4287A94C5DD5 /* RunStore.swift in Sources */,
+				D5E1C729B8CE45CC8C1F25F1 /* BarometerSensor.swift in Sources */,
+				29DCE6E3C9064DF08002402E /* LocationSensor.swift in Sources */,
+				5620847D871F441B9A75E5F0 /* MotionSensor.swift in Sources */,
+				12C0F568D2684A86A81AD60F /* RunSessionController.swift in Sources */,
+				530DD9F6E478401FA062C587 /* TrackingConstants.swift in Sources */,
+				E8DF557EDA444C2192485053 /* AnomalyKind.swift in Sources */,
+				5B530C92F1A8405FB38BD197 /* FusionState.swift in Sources */,
+				DE0D2D2AC07B45D898C233D4 /* PermissionStatus.swift in Sources */,
+				7401534FCECA4DDD83EFA731 /* SensorSample.swift in Sources */,
+				DACA078A0A7C4E96B6100E59 /* TrackSource.swift in Sources */,
+				1A514DC331FC409DA8B903E5 /* LiveMapView.swift in Sources */,
+				673FB5F35E88412780E01AB2 /* PostRunView.swift in Sources */,
+				7AC456D124F842CDADA33FA7 /* StartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ADCD14C3E9E941BD815D4397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49B198F7E7554EAE811250B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		897AA4191CAC43D29B923C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BadGPSTracker/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stepan1984.BadGPSTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		D2F89E5AE06F40D6AF431FF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BadGPSTracker/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stepan1984.BadGPSTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6D75EC420EA43DFB6665A99 /* Build configuration list for PBXProject "BadGPSTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCD14C3E9E941BD815D4397 /* Debug */,
+				49B198F7E7554EAE811250B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		966467E31B6C4EFDA6EA303A /* Build configuration list for PBXNativeTarget "BadGPSTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897AA4191CAC43D29B923C07 /* Debug */,
+				D2F89E5AE06F40D6AF431FF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 157D17478DD8491D831D768A /* Project object */;
+}
